@@ -1,4 +1,6 @@
-##Overview
+## Overview
+
+This is going to be in story map format for UW Seattle course Geog 317, but I will probably convert it to a Mapbox web app.
 
 The World Cup is underway and is a huge sporting event for fans of football around the
 world. Many athletes that participate in their national team, often the country of their birth, but
