@@ -31,5 +31,4 @@ generate maps but not require maps.
 ## Sources
 
 1. https://fdp.fifa.org/
-2. https://www.kaggle.com/datasets/cristianedelweiss/fifa-world-cup-2022-players?select=World+C
-up+players+-+Dataset.csv
+2. https://www.kaggle.com/datasets/cristianedelweiss/fifa-world-cup-2022-players?select=World+Cup+players+-+Dataset.csv
