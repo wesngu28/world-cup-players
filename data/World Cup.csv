@@ -115,7 +115,7 @@ Cameroon,9,Forward,NSAME Jean-Pierre,Jean Pierre Junior,NSAME,NSAME,1/5/1993,BSC
 Cameroon,10,Forward,ABOUBAKAR Vincent,Vincent,ABOUBAKAR,ABOUBAKAR,22/01/1992,Al Nassr FC (KSA),176,"Yaoundé, Cameroon",3.8480325,11.5020752
 Cameroon,11,Forward,BASSOGOG Christian,Christian,MOUGANG BASSOGOG,BASSOGOG,18/10/1995,Shanghai Shenhua FC (CHN),178,"Douala, Cameroon",4.0510564,9.7678687
 Cameroon,12,Forward,TOKO EKAMBI Karl,Karl Louis-Brillant,TOKO EKAMBI,TOKO-EKAMBI,14/09/1992,Olympique Lyon (FRA),183,"Paris, France",48.856614,2.3522219
-Cameroon,13,Forward,CHOUPO-MOTING Eric Maxim,Eric Maxim,CHOUPO-MOTING,CHOUPO-MOTING,23/03/1989,FC Bayern München (GER),191,"Hamburg, West Germany",53.5488282,9.987170299999999
+Cameroon,13,Forward,CHOUPO-MOTING Eric Maxim,Eric Maxim,CHOUPO-MOTING,CHOUPO-MOTING,23/03/1989,FC Bayern München (GER),191,"Hamburg, West Germany",53.5488282,9.9871703
 Cameroon,14,Midfielder,OUM GOUET Samuel,Samuel Yves,OUM GOUET,OUM,14/12/1997,KV Mechelen (BEL),185,"Ayos, Cameroon",3.9056609,12.5269347
 Cameroon,15,Midfielder,KUNDE Pierre,Pierre,KUNDE MALONG,KUNDE MALONG,26/07/1995,Olympiacos Piraeus FC (GRE),180,"Limbe, Cameroon",4.022465599999999,9.1954432
 Cameroon,16,Goalkeeper,EPASSY Devis,Devis Rogers,EPASSY MBOKA,EPASSY,2/2/1993,Abha Club (KSA),187,"Soisy-sous-Montmorency, France",48.988506,2.299731
@@ -216,7 +216,7 @@ Denmark,6,Defender,CHRISTENSEN Andreas,Andreas Bødtker,CHRISTENSEN,A. CHRISTENS
 Denmark,7,Midfielder,JENSEN Mathias,Mathias,JENSEN,JENSEN,1/1/1996,Brentford FC (ENG),180,"Jerslev, Zealand, Denmark",55.612252,11.229265
 Denmark,8,Midfielder,DELANEY Thomas,Thomas Joseph,DELANEY,DELANEY,3/9/1991,Sevilla FC (ESP),180,"Frederiksberg, Denmark",55.677069,12.513321
 Denmark,9,Forward,BRAITHWAITE Martin,Martin Christensen,BRAITHWAITE,BRAITHWAITE,5/6/1991,RCD Espanyol (ESP),180,"Esbjerg, Denmark",55.476466,8.459405
-Denmark,10,Midfielder,ERIKSEN Christian,Christian Dannemann,ERIKSEN,ERIKSEN,14/02/1992,Manchester United FC (ENG),181,"Middelfart, Denmark",55.497204,9.747171999999999
+Denmark,10,Midfielder,ERIKSEN Christian,Christian Dannemann,ERIKSEN,ERIKSEN,14/02/1992,Manchester United FC (ENG),181,"Middelfart, Denmark",55.497204,9.747172
 Denmark,11,Midfielder,SKOV OLSEN Andreas,Andreas Skov,OLSEN,SKOV OLSEN,29/12/1999,Club Brugge (BEL),187,"Hillerød, Denmark",55.927909,12.300806
 Denmark,12,Forward,DOLBERG Kasper,Kasper Dolberg,RASMUSSEN,DOLBERG,6/10/1997,Sevilla FC (ESP),187,"Silkeborg, Denmark",56.176362,9.5549216
 Denmark,13,Defender,KRISTENSEN Rasmus,Rasmus Nissen,KRISTENSEN,KRISTENSEN,11/7/1997,Leeds United FC (ENG),187,"Brande, Denmark",55.9426864,9.1287953
@@ -245,7 +245,7 @@ Ecuador,9,Midfielder,PRECIADO Ayrton,Eduar Ayrton,PRECIADO GARCIA,AYRTON P.,17/0
 Ecuador,10,Midfielder,IBARRA Romario,Romario Andres,IBARRA MINA,IBARRA,24/09/1994,CF Pachuca (MEX),175,"Atuntaqui, Ecuador",0.3323852,-78.2162833
 Ecuador,11,Forward,ESTRADA Michael,Michael Steveen,ESTRADA MARTÍNEZ,ESTRADA,7/4/1996,Cruz Azul (MEX),187,"Guayaquil, Ecuador",-2.1894128,-79.8890662
 Ecuador,12,Goalkeeper,RAMIREZ Moises,Wellington Moises,RAMÍREZ PRECIADO,RAMIREZ,9/9/2000,Independiente Del Valle (ECU),185,"Guayaquil, Ecuador",-2.1894128,-79.8890662
-Ecuador,13,Forward,VALENCIA Enner,Enner Remberto,VALENCIA LASTRA,VALENCIA,4/11/1989,Fenerbahce SK (TUR),177,"Esmeraldas, Ecuador",Err,
+Ecuador,13,Forward,VALENCIA Enner,Enner Remberto,VALENCIA LASTRA,VALENCIA,4/11/1989,Fenerbahce SK (TUR),177,"Esmeraldas, Ecuador",0.9681789,-79.6517202
 Ecuador,14,Defender,ARREAGA Xavier,Xavier Ricardo,ARREAGA BERMELLO,ARREAGA,28/09/1994,Seattle Sounders FC (USA),184,"Guayaquil, Ecuador",-2.1894128,-79.8890662
 Ecuador,15,Midfielder,MENA Angel,Angel Israel,MENA DELGADO,MENA,21/01/1988,Club León (MEX),168,"Guayaquil, Ecuador",-2.1894128,-79.8890662
 Ecuador,16,Midfielder,SARMIENTO Jeremy,Jeremy Leonel,SARMIENTO MORANTE,SARMIENTO,16/06/2002,Brighton & Hove Albion FC (ENG),178,"Madrid, Spain",40.4167754,-3.7037902
@@ -333,7 +333,7 @@ Germany,19,Midfielder,SANE Leroy,Leroy Aziz,SANÉ,SANE,11/1/1996,FC Bayern Münc
 Germany,20,Defender,GUENTER Christian,Christian,GÜNTER,GÜNTER,28/02/1993,SC Freiburg (GER),184,"	Villingen-Schwenningen, Germany",48.0594021,8.4640869
 Germany,21,Midfielder,GUENDOGAN Ilkay,Ilkay,GÜNDOGAN,GÜNDOGAN,24/10/1990,Manchester City FC (ENG),180,"Gelsenkirchen, Germany",51.5187651,7.0838411
 Germany,22,Goalkeeper,TER STEGEN Marc-Andre,Marc-André,TER STEGEN,TER STEGEN,30/04/1992,FC Barcelona (ESP),187,"Mönchengladbach, Germany",51.1941686,6.4315392
-Germany,23,Defender,SCHLOTTERBECK Nico,Nico Cedric,SCHLOTTERBECK,SCHLOTTERBECK,1/12/1999,Borussia Dortmund (GER),191,"Waiblingen, Germany",48.8293519,9.318573899999999
+Germany,23,Defender,SCHLOTTERBECK Nico,Nico Cedric,SCHLOTTERBECK,SCHLOTTERBECK,1/12/1999,Borussia Dortmund (GER),191,"Waiblingen, Germany",48.8293519,9.3185739
 Germany,24,Forward,ADEYEMI Karim,Karim David,ADEYEMI,ADEYEMI,18/01/2002,Borussia Dortmund (GER),180,"Munich, Germany",48.1351253,11.5819806
 Germany,25,Defender,BELLA KOTCHAP Armel,Armel,BELLA KOTCHAP,BELLA KOTCHAP,11/12/2001,Southampton FC (ENG),190,"Paris, France",48.856614,2.3522219
 Germany,26,Forward,MOUKOKO Youssoufa,Youssoufa,MOUKOKO,MOUKOKO,20/11/2004,Borussia Dortmund (GER),179,"Yaoundé, Cameroon",3.8480325,11.5020752
@@ -443,7 +443,7 @@ South Korea,26,Midfielder,SONG Minkyu,Minkyu,SONG,M K SONG,12/9/1999,Jeonbuk Hyu
 Mexico,1,Goalkeeper,TALAVERA Alfredo,Alfredo,TALAVERA DIAZ,A. TALAVERA,18/09/1982,FC Juárez (MEX),188,"La Barca, Jalisco, Mexico",20.2906606,-102.5458219
 Mexico,2,Defender,ARAUJO Nestor,Nestor Alejandro,ARAUJO RAZO,N. ARAUJO,29/08/1991,Club América (MEX),187,"Guadalajara, Jalisco, Mexico",20.6596988,-103.3496092
 Mexico,3,Defender,MONTES Cesar,Cesar Jasib,MONTES CASTRO,C. MONTES,24/02/1997,CF Monterrey (MEX),191,"Hermosillo, Sonora, Mexico",29.0729673,-110.9559192
-Mexico,4,Defender,ALVAREZ Edson,Edson Omar,ALVAREZ VELAZQUEZ,E. ALVAREZ,24/10/1997,AFC Ajax (NED),180,"Tlalnepantla, Mexico",19.5345279,-99.19073639999999
+Mexico,4,Defender,ALVAREZ Edson,Edson Omar,ALVAREZ VELAZQUEZ,E. ALVAREZ,24/10/1997,AFC Ajax (NED),180,"Tlalnepantla, Mexico",19.5345279,-99.1907364
 Mexico,5,Defender,VASQUEZ Johan,Johan Felipe,VASQUEZ IBARRA,J. VASQUEZ,22/10/1998,US Cremonese (ITA),182,"Navojoa, Sonora, Mexico",27.0727573,-109.4437493
 Mexico,6,Defender,ARTEAGA Gerardo,Gerardo Daniel,ARTEAGA ZAMORA,G. ARTEAGA,7/9/1998,KRC Genk (BEL),175,"Zapopan, Jalisco, Mexico",20.6719563,-103.416501
 Mexico,7,Midfielder,ROMO Luis,Luis Francisco,ROMO BARRON,L. ROMO,5/6/1995,CF Monterrey (MEX),183,"Ahome, Sinaloa, Mexico",25.9197727,-109.1746261
@@ -547,7 +547,7 @@ Poland,26,Midfielder,SKORAS Michal,Michał Krzysztof,SKÓRAŚ,SKÓRAŚ,15/02/200
 Portugal,1,Goalkeeper,RUI PATRICIO,Rui Pedro,DOS SANTOS PATRÍCIO,RUI PATRICIO,15/02/1988,AS Roma (ITA),189,"Marrazes, Portugal",39.763454,-8.805053899999999
 Portugal,2,Defender,DIOGO DALOT,José Diogo,DALOT TEIXEIRA,DALOT,18/03/1999,Manchester United FC (ENG),184,"Braga, Portugal",41.5454486,-8.426506999999999
 Portugal,3,Defender,PEPE,Kepler Laveran,DE LIMA FERREIRA,PEPE,26/02/1983,FC Porto (POR),188,"Maceió, Brazil",-9.6660417,-35.7352167
-Portugal,4,Defender,RUBEN DIAS,Rúben,DOS SANTOS GATO ALVES DIAS,RUBEN DIAS,14/05/1997,Manchester City FC (ENG),187,"Amadora, Portugal",38.7577603,-9.224547399999999
+Portugal,4,Defender,RUBEN DIAS,Rúben,DOS SANTOS GATO ALVES DIAS,RUBEN DIAS,14/05/1997,Manchester City FC (ENG),187,"Amadora, Portugal",38.7577603,-9.2245474
 Portugal,5,Defender,RAPHAEL GUERREIRO,Raphael Adelino José,GUERREIRO,RAPHAEL,22/12/1993,Borussia Dortmund (GER),170,"Le Blanc-Mesnil, France",48.941345,2.46436
 Portugal,6,Midfielder,JOAO PALHINHA,João Maria,LOBO ALVES PALHINHA GONÇALVES,PALHINHA,9/7/1995,Fulham FC (ENG),190,"Lisbon, Portugal",38.7222524,-9.1393366
 Portugal,7,Forward,CRISTIANO RONALDO,Cristiano Ronaldo,DOS SANTOS AVEIRO,RONALDO,5/2/1985,Manchester United FC (ENG),185,"Funchal, Madeira, Portugal",32.6506129,-16.9082357
@@ -558,7 +558,7 @@ Portugal,11,Forward,JOAO FELIX,João,FÉLIX SEQUEIRA,JOÃO FÉLIX,10/11/1999,CA 
 Portugal,12,Goalkeeper,JOSE SA,José Pedro,MALHEIRO DE SÁ,JOSÉ SÁ,17/01/1993,Wolverhampton Wanderers FC (ENG),192,"Braga, Portugal",41.5454486,-8.426506999999999
 Portugal,13,Defender,DANILO PEREIRA,Danilo Luis Hélio,PEREIRA,DANILO,9/9/1991,Paris Saint-Germain FC (FRA),188,"Bissau, Guinea-Bissau",11.803749,-15.180413
 Portugal,14,Midfielder,WILLIAM CARVALHO,William,SILVA DE CARVALHO,WILLIAM,7/4/1992,Real Betis (ESP),190,"Luanda, Angola",-8.8146556,13.2301756
-Portugal,15,Forward,RAFAEL LEAO,Rafael Alexandre,DA CONCEIÇÃO LEÃO,R. LEÃO,10/6/1999,AC Milan (ITA),188,"Almada, Portugal",38.6765238,-9.165104699999999
+Portugal,15,Forward,RAFAEL LEAO,Rafael Alexandre,DA CONCEIÇÃO LEÃO,R. LEÃO,10/6/1999,AC Milan (ITA),188,"Almada, Portugal",38.6765238,-9.1651047
 Portugal,16,Midfielder,VITINHA,Vitor,MACHADO FERREIRA,VITINHA,13/02/2000,Paris Saint-Germain FC (FRA),172,"Cabeceiras de Basto, Portugal",41.5116939,-7.9979753
 Portugal,17,Midfielder,JOAO MARIO,João Mário,NAVAL DA COSTA EDUARDO,J. MÁRIO,19/01/1993,SL Benca (POR),179,"Barreiro, Portugal",38.6608149,-9.0790724
 Portugal,18,Midfielder,RUBEN NEVES,Ruben Diogo,SILVA NEVES,R. NEVES,13/03/1997,Wolverhampton Wanderers FC (ENG),180,"Mozelos, Portugal",40.9951629,-8.5638609
@@ -671,7 +671,7 @@ Serbia,20,Midfielder,MILINKOVIC-SAVIC Sergej,Sergej,MILINKOVIĆ-SAVIĆ,SERGEJ,27
 Serbia,21,Forward,DJURICIC Filip,Filip,ĐURIČIĆ,ĐURIČIĆ,30/01/1992,UC Sampdoria (ITA),176,"Obrenovac, SR Serbia, Yugoslavia",44.6536553,20.2000541
 Serbia,22,Midfielder,LAZOVIC Darko,Darko,LAZOVIĆ,LAZOVIĆ,15/09/1990,Hellas Verona FC (ITA),181,"Čačak, SFR Yugoslavia",43.8913677,20.3506051
 Serbia,23,Goalkeeper,MILINKOVIC-SAVIC Vanja,Vanja,MILINKOVIĆ SAVIĆ,VANJA,20/02/1997,Torino FC (ITA),202,"Orense, Spain",42.33578929999999,-7.863880999999998
-Serbia,24,Midfielder,ILIC Ivan,Ivan,ILIĆ,ILIĆ,17/03/2001,Hellas Verona FC (ITA),182,"Niš, FR Yugoslavia",Err,
+Serbia,24,Midfielder,ILIC Ivan,Ivan,ILIĆ,ILIĆ,17/03/2001,Hellas Verona FC (ITA),182,"Niš, FR Yugoslavia",43.320926,21.8954069
 Serbia,25,Defender,MLADENOVIC Filip,Filip,MLADENOVIĆ,MLADENOVIĆ,15/08/1991,Legia Warsaw (POL),181,"Čačak, SR Serbia, Yugoslavia",43.8913677,20.3506051
 Serbia,26,Midfielder,GRUJIC Marko,Marko,GRUJIĆ,GRUJIĆ,13/4/1996,FC Porto (POR),191,"Belgrade, Serbia, FR Yugoslavia",44.8125449,20.46123
 Spain,1,Goalkeeper,SANCHEZ Robert,Robert,LYNCH SÁNCHEZ,SÁNCHEZ,18/11/1997,Brighton & Hove Albion FC (ENG),197,"Cartagena, Spain",37.6156944,-0.9892242
@@ -707,7 +707,7 @@ Switzerland,4,Defender,ELVEDI Nico,Nico,ELVEDI,ELVEDI,30/09/1996,VfL Borussia M�
 Switzerland,5,Defender,AKANJI Manuel,Manuel Obafemi,AKANJI,AKANJI,19/07/1995,Manchester City FC (ENG),186,"Neftenbach, Switzerland",47.5266537,8.6688227
 Switzerland,6,Midfielder,ZAKARIA Denis,Denis Lemi,ZAKARIA LAKO LADO,ZAKARIA,20/11/1996,Chelsea FC (ENG),189,"Geneva, Switzerland",46.2043907,6.1431577
 Switzerland,7,Forward,EMBOLO Breel,Breel Donald,EMBOLO,EMBOLO,14/02/1997,AS Monaco (FRA),184,"Yaoundé, Cameroon",3.8480325,11.5020752
-Switzerland,8,Midfielder,FREULER Remo,Remo Marco,FREULER,FREULER,15/04/1992,Nottingham Forest FC (ENG),181,"Ennenda, Switzerland",47.0338781,9.077552899999999
+Switzerland,8,Midfielder,FREULER Remo,Remo Marco,FREULER,FREULER,15/04/1992,Nottingham Forest FC (ENG),181,"Ennenda, Switzerland",47.0338781,9.0775529
 Switzerland,9,Forward,SEFEROVIC Haris,Haris,SEFEROVIC,SEFEROVIC,22/02/1992,Galatasaray SK (TUR),186,"Sursee, Switzerland",47.1714819,8.111131199999999
 Switzerland,10,Midfielder,XHAKA Granit,Granit,XHAKA,XHAKA,27/09/1992,Arsenal FC (ENG),183,"Basel, Switzerland",47.5595986,7.5885761
 Switzerland,11,Defender,STEFFEN Renato,Renato,STEFFEN,STEFFEN,3/11/1991,FC Lugano (SUI),170,"Aarau, Switzerland",47.390434,8.0457015
@@ -790,7 +790,7 @@ USA,9,Forward,FERREIRA Jesus,Jesus David,FERREIRA CASTRO,FERREIRA,24/12/2000,FC 
 USA,10,Forward,PULISIC Christian,Christian Mate,PULISIC,PULISIC,18/09/1998,Chelsea FC (ENG),179,"Hershey, Pennsylvania, United States",40.2859239,-76.65024679999999
 USA,11,Forward,AARONSON Brenden,Brenden Russell,AARONSON,AARONSON,22/10/2000,Leeds United FC (ENG),177,"Medford, New Jersey, U.S.",39.86618259999999,-74.8390162
 USA,12,Goalkeeper,HORVATH Ethan,Ethan Shea,HORVATH,HORVATH,9/6/1995,Luton Town FC (ENG),193,"Highlands Ranch, Colorado, U.S.",39.5480789,-104.9739333
-USA,13,Defender,REAM Tim,Timothy Michael,REAM,REAM,5/10/1987,Fulham FC (ENG),185,"St. Louis, Missouri, United States",38.6270025,-90.19940419999999
+USA,13,Defender,REAM Tim,Timothy Michael,REAM,REAM,5/10/1987,Fulham FC (ENG),185,"St. Louis, Missouri, United States",38.6270025,-90.1994042
 USA,14,Midfielder,DE LA TORRE Luca,Lucas Daniel,DE LA TORRE,DE LA TORRE,23/05/1998,RC Celta Vigo (ESP),178,"San Diego, California, United States",32.715738,-117.1610838
 USA,15,Defender,LONG Aaron,Aaron Ray,LONG,LONG,12/10/1992,New York Red Bulls (USA),188,"Oak Hills, California, U.S.",34.4340385,-117.4346964
 USA,16,Forward,MORRIS Jordan,Jordan Perry,MORRIS,MORRIS,26/10/1994,Seattle Sounders FC (USA),183,"Seattle, Washington, U.S.",47.6062095,-122.3320708
@@ -801,7 +801,7 @@ USA,20,Defender,CARTER-VICKERS Cameron,Cameron Robert,CARTER-VICKERS,CARTER-VICK
 USA,21,Forward,WEAH Timothy,Timothy Tarpeh,WEAH,WEAH,22/02/2000,Lille OSC (FRA),182,"Brooklyn, New York, U.S.",40.6781784,-73.9441579
 USA,22,Defender,YEDLIN DeAndre,De Andre Roselle,YEDLIN,YEDLIN,9/7/1993,Inter Miami FC (USA),171,"Seattle, Washington, United States",47.6062095,-122.3320708
 USA,23,Midfielder,ACOSTA Kellyn,Kellyn Kai,PERRY-ACOSTA,ACOSTA,24/07/1995,Los Angeles FC (USA),177,"Plano, Texas, United States",33.0198431,-96.6988856
-USA,24,Forward,SARGENT Josh,Joshua Thomas,SARGENT,SARGENT,20/02/2000,Norwich City FC (ENG),185,"O'Fallon, Missouri, United States",38.8106075,-90.69984769999999
+USA,24,Forward,SARGENT Josh,Joshua Thomas,SARGENT,SARGENT,20/02/2000,Norwich City FC (ENG),185,"O'Fallon, Missouri, United States",38.8106075,-90.6998477
 USA,25,Goalkeeper,JOHNSON Sean,Sean Everet,JOHNSON,JOHNSON,31/05/1989,New York City FC (USA),190,"Lilburn, Georgia, United States",33.8901036,-84.14297189999999
 USA,26,Defender,SCALLY Joe,Joseph Michael,SCALLY,SCALLY,31/12/2002,VfL Borussia Mönchengladbach (GER),184,"Lake Grove, New York, United States",40.8528761,-73.1151102
 Wales,1,Goalkeeper,HENNESSEY Wayne,Wayne Robert,HENNESSEY,HENNESSEY,24/01/1987,Nottingham Forest FC (ENG),198,"Bangor, Wales",53.22739,-4.129263
