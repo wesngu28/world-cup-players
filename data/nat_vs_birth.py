@@ -32,5 +32,6 @@ def calculate_diff(df):
 
 freq_df[['BORN_IN_VS_NAT', 'TOT_WC_PCTG']] = freq_df['COUNTRY'].apply(calculate_percentage).apply(pd.Series)
 calculate_diff(wc_df)
+freq_df['PFB_NAT_PCTG'] = freq_df['PLAY_FOR_BIRTH'].apply(lambda x: x/26)
 
 freq_df.to_csv('World Cup Country Statistics.csv', index=False, encoding='utf-8')
