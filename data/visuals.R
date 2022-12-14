@@ -3,6 +3,8 @@ library("tidyr")
 library("ggplot2")
 
 wc <- read.csv("World Cup Country Statistics.csv", stringsAsFactors = FALSE)
+clubs <- read.csv("Clubs.csv", stringsAsFactors = FALSE)
+clubs <- clubs %>% head(15)
 
 c1_data <- wc %>% filter(BORN_IN_VS_NAT != "")
 
@@ -30,6 +32,15 @@ chart2 <- ggplot(data = c2_data, aes(x = PFB_NAT_PCTG, y = reorder(COUNTRY, -PFB
   theme(plot.title = element_text(hjust = 0.5)) +
   scale_x_continuous(breaks = seq(0, 1.0, by = .1))
 
+chart_3 <- ggplot(data = clubs, aes(x = COUNT, y = reorder(CLUB, -COUNT))) +
+  geom_bar(stat = "identity") +
+  labs(
+    x = "Player Count",
+    y = "Clubs",
+    title = "World Cup Player's Clubs",
+  ) +
+  theme(plot.title = element_text(hjust = 0.5))
+
 # c3_data <- wc %>% arrange(TOT_WC_PCTG) %>% tail(10)
 # print(c3_data)
 # chart3 <- ggplot(c3_data, aes(x="", y = TOT_WC_PCTG, fill = COUNTRY)) +
@@ -41,4 +52,4 @@ chart2 <- ggplot(data = c2_data, aes(x = PFB_NAT_PCTG, y = reorder(COUNTRY, -PFB
 #   theme_void() +
 #   theme(plot.title = element_text(hjust = 0.5))
 
-# print(chart3)
+print(chart_3)
