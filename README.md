@@ -2,7 +2,7 @@
 
 This is going to be in story map format for UW Seattle course Geog 317, but I will probably convert it to a Mapbox web app.
 
-This will be a combination repo containing the source files for my Geog 317 project and the web map Javascript version of it.
+This will be a combination repo containing the source files for my Geog 317 project and the web map Javascript version of it. The story map is only viewable by those in my organization (the University of Washington)
 
 The World Cup is underway and is a huge sporting event for fans of football around the
 world. Many athletes that participate in their national team, often the country of their birth, but
