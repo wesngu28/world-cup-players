@@ -60,7 +60,7 @@ def get_place_of_birth(player_name: str, rvr: bool, dob: str) -> str:
   except:
     return f"{player_name} error"
 
-df = pd.read_csv("data/World Cup players - Official scrapped list.csv")
+# df = pd.read_csv("data/World Cup players - Official scrapped list.csv")
 
 def traverse_df_for_birth():
     for index, player in df.iterrows():
@@ -83,3 +83,14 @@ def traverse_df_for_birth():
         df.to_csv('data/World Cup.csv', index=False, encoding='utf-8')
 
 # Manually fix all other errors
+
+df = pd.read_csv("WC Join.csv")
+
+def case_fix(player_name: str):
+    name_parts = player_name.split()
+    name_parts = [word[0].upper() + word[1:].lower() for word in name_parts]
+    player_name = " ".join(name_parts)
+    return player_name
+
+# df["PLAYER_NAME"] = df["PLAYER_NAME"].apply(case_fix)
+# df.to_csv('WC Join.csv', index=False, encoding='utf-8')
