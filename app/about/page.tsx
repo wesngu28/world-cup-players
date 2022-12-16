@@ -1,7 +1,12 @@
 import { readFileSync } from "fs"
 import LicensedBar from "../../components/Bar"
+import { ClubPolar } from "../../components/PolarArea"
+import { Chart as ChartJS, ArcElement, Tooltip, RadialLinearScale, Legend, CategoryScale, LinearScale, BarElement, Title } from 'chart.js';
+
+ChartJS.register(ArcElement, Tooltip, Legend, Title, RadialLinearScale, CategoryScale, LinearScale, BarElement);
 
 export default function About() {
+
   return(
     <div className={"flex flex-col items-center"}>
       <h2 className={"mt-8 mb-8 font-bold leading-5 text-[2.5rem] font-robotomono"}>
@@ -43,10 +48,55 @@ export default function About() {
       Regardless, the act of being called up to represent a country is one of the greatest honors for a footballer,
       and the decision for those eligible for multiple teams cannot be easy.
       </p>
+      <p className={'mb-8 font-bold text-xl'}>Charts</p>
+      <p className={'mb-8 w-2/4 leading-7'}>
+        The two below bar charts do not display countries with players born in them that did not qualify for the World Cup. An example
+        is Scotland, who have 4 players that would be represented otherwise.
+      </p>
       <LicensedBar x={'BORN_IN_VS_NAT'} xText="Ratio of Players Born in Country to Size of their Team"
       title="Ratio of Players Born in Country to Size of their Team" xHover="Players Born in Country to Team Size"/>
+      <p className={'mb-8 w-2/4 leading-7'}>
+        The above chart shows the ratio between players participating in the World Cup born in the countries participating in the World Cup,
+        as opposed to the amount of players on that national team. For instance, Iran is 24:25 in its ratio, meaning there are 24 players born
+        in Iran as opposed to the 25 players on the national team.
+      </p>
+      <p className={'mb-8 w-2/4 leading-7'}>
+        The two clear football exporters are France and England, being the two countries with the highest ratio. This means that players
+        who are born in France or England have chosen to forgo playing for their relative teams (whether they were not invited or they chose
+        to play for another country).
+      </p>
+      <p className={'mb-8 w-2/4 leading-7'}>
+        Countries who tend to have a lower ratio tend to be located in Africa, including nations like Morocco, Tunisia, Senegal, and Cameroon.
+        A commonality between these nations is the shared history of French colonial occupation, and it could be that some French players have
+        chosen to use their eligibility to play for these nations. Wales is also quite low, and they could be one of the reasons England is so
+        high, as a lot of the Welsh national team were born in England.
+      </p>
       <LicensedBar x={'PFB_NAT_PCTG'} xText="Percentage of National Team that was born in the Country"
       title="Percentage of National Team that was born in the Country" xHover="Percentage of National Team that was born in the Country"/>
+      <p className={'mb-8 w-2/4 leading-7'}>
+        This chart is showing the percentage of players that are comprise a national team who are born in that country.
+        You can see that most national teams are comprised of at least 85% of players who are born in their country, with the ones that are
+        wholly composed of nationals being South Korea, Saudi Arabia, Brazil, Belgium, and Argentina.
+      </p>
+      <p className={'mb-8 w-2/4 leading-7'}>
+        Something interesting that I noticed is that despite having the most overall players in the World Cup, the French team is not even
+        made up of only French nationals, having four players who were born outside of France (Angola, Côte d&apos;Ivoire, Democratic Republic
+        of the Congo, and Italy).
+      </p>
+      <ClubPolar />
+      <p className={'mb-8 w-2/4 leading-7'}>
+        While the World Cup is not active, football players may play for different clubs across various countries. This chart shows the clubs
+        that have the most players who were called up to represent their nation at the World Cup.
+      </p>
+      <p className={'mb-8 w-2/4 leading-7'}>
+        The majority of the clubs here are a part of various regional leagues in Europe, such as Bayern Munich and Barcelona. A lot of these clubs have
+        talent from around the world, so the high amount of players from this makes sense. What is more interesting is the presence of clubs Al Sadd
+        and Al Hilal. This could indicate that players from the Saudi and Qatar national team are more likely to remain within their country&apos;s
+        own league and national system.
+      </p>
+      <p className={'mb-8 w-2/4 leading-7'}>
+        It is also interesting to see the lack of Latin American clubs in the top, as countries like Argentina and Brazil tend to be notable worldwide.
+      </p>
     </div>
   )
 }
