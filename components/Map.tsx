@@ -138,19 +138,19 @@ export default function Maps() {
     paint: {
       'fill-color': [
           'step',
-          ['get', 'FREQUENCY'],
+          ['get', 'WC_APPEARA'],
           '#ccc',
           0,
           '#d0d1e6',
           1,
           '#a6bddb',
-          5,
+          3,
           '#74a9cf',
-          25,
+          7,
           '#2b8cbe',
-          40,
+          11,
           '#045a8d',
-          60,
+          16,
           '#034e7b'
 
       ],
