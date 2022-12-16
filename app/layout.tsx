@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>
+      <body className="bg-gray-200 font-nunito">
         <div className="min-h-screen">
           <div className="flex-shrink-0">
             <Header />

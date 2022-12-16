@@ -45,6 +45,7 @@ def get_place_of_birth(player_name: str, rvr: bool, dob: str) -> str:
         # another person has the same birth year
         a_tag = soup.find_all(lambda tag: len(
             tag.find_all()) == 0 and year in tag.text)
+
         if (len(a_tag) == 0):
             # guess its just diacritic/other disamb
             a_tag = soup.find("a")
@@ -57,6 +58,7 @@ def get_place_of_birth(player_name: str, rvr: bool, dob: str) -> str:
         else:
             pob = get_place_of_birth(player_name, False, dob)
             return pob
+
   except:
     return f"{player_name} error"
 
@@ -68,18 +70,23 @@ def traverse_df_for_birth():
 
         place_of_birth = get_place_of_birth(
             player["PLAYER NAME"], True, player["DOB"])
+
         if 'error' in place_of_birth:
             player_name = player["PLAYER NAME"]
             name_parts = player_name.split()
+
             if ('born' not in name_parts):
                 name_parts = [word[0].upper() + word[1:].lower()
                             for word in name_parts]
                 player_name = " ".join(name_parts)
+
             place_of_birth = get_place_of_birth(player_name, False, player["DOB"])
 
         print(player["PLAYER NAME"] + " " + place_of_birth)
+
         df.loc[index, 'Birth'] = re.sub(
             r"\[(.*)\]", "", place_of_birth).replace('\n', '')
+
         df.to_csv('data/World Cup.csv', index=False, encoding='utf-8')
 
 # Manually fix all other errors
