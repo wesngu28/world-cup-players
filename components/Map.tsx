@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Map, { Layer, Source } from "react-map-gl";
-import { choroStyle } from "./MapCountryLayer";
-import { appearances, highest } from "./MapHistoryLayer";
-import { pointStyle } from "./MapPlayer";
+import { choroStyle, frequencyLegend } from "./MapCountryLayer";
+import { appearances, appearancesLegend, highest, highestLegend } from "./MapHistoryLayer";
+import { pointStyle, colors } from "./MapPlayer";
 
 export default function Maps() {
 
@@ -122,10 +122,16 @@ export default function Maps() {
         onClick={handleClick}
       >
         {info}
-        {active === 'PLAYERS' ?         <div className={"absolute bottom-4 w-64 right-56 m-4 bg-gray-300 grid grid-cols-2 place-items-start p-4"}>
-            {filterable.map(country => <button key={country} onClick={() => setFilter(['in', 'National_Team', country])}>{country}</button>)}
+        {active === 'PLAYERS' ?
+          <div className={"absolute bottom-4 w-72 left-0 m-6 bg-gray-300 grid grid-cols-2 place-items-start p-4"}>
+            {filterable.map((country, i) => <button key={country} onClick={() => setFilter(['in', 'National_Team', country])}><i className={`inline-block w-5 h-5 ${colors[i]}`}></i> {country}</button>)}
             <button onClick={() => setFilter(['in', 'National_Team', ''])}>All</button>
-        </div> : null}
+          </div> :
+          <div className={"absolute bottom-4 left-0 w-min m-4 bg-gray-300 flex flex-col p-4"}>
+            {active === 'COUNTRIES' ? frequencyLegend.map(freq => <div className={'flex'} key={freq[0]}><i className={`mr-2 inline-block w-5 h-5 ${freq[1]}`}></i>{freq[0]}</div>) : null}
+            {active === 'APPEAR' ? appearancesLegend.map(appear => <div className={'flex'} key={appear[0]}><i className={`mr-2 inline-block w-5 h-5 ${appear[1]}`}></i>{appear[0]}</div>) : null}
+            {active === 'HIGHEST' ? highestLegend.map(high => <div className={'flex'} key={high[0]}><i className={`mr-2 inline-block w-5 h-5 ${high[1]}`}></i>{high[0]}</div>) : null}
+          </div>}
         <div className={"absolute bottom-4 right-0 w-min m-4 bg-gray-300 flex flex-col p-4"}>
           <button className={`border-b-2 border-gray-300 p-4 ${active === 'PLAYERS' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={setPlayers}>Players</button>
           <button className={`border-b-2 border-gray-300 p-4 ${active === 'COUNTRIES' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={setNations}>Frequency</button>

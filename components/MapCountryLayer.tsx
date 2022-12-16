@@ -27,3 +27,12 @@ export const choroStyle: LayerProps = {
     'fill-opacity': 0.8,
   }
 };
+
+export const frequencyLegend = [
+  [0, 'bg-[#d0d1e6]'],
+  [1, 'bg-[#a6bddb]'],
+  [5, 'bg-[#74a9cf]'],
+  [25, 'bg-[#2b8cbe]'],
+  [40, 'bg-[#045a8d]'],
+  [60, 'bg-[#034e7b]']
+]

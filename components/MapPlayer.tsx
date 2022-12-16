@@ -47,6 +47,16 @@ export const pointStyle: LayerProps = {
   }
 };
 
+export const colors = [
+  'bg-[#43A1D5]', 'bg-[#00843D]', 'bg-[#FFD500]', 'bg-[#19AE47]', 'bg-[#FBD81B]',
+  'bg-[#C5281C]', 'bg-[#EBC17D]', 'bg-[#0457A2]', 'bg-[#CD181E]', 'bg-[#FFCE00]',
+  'bg-[#FFFFFF]', 'bg-[#21304D]', 'bg-[#000000]', 'bg-[#009535]', 'bg-[#239F40]',
+  'bg-[#4EB2EB]', 'bg-[#334D45]', 'bg-[#D29D63]', 'bg-[#F36C21]', 'bg-[#DC143C]',
+  'bg-[#0D6938]', 'bg-[#7F1431]', 'bg-[#7EC8AE]', 'bg-[#11A335]', 'bg-[#0D1131]',
+  'bg-[#EC0F32]', 'bg-[#FCB507]', 'bg-[#FF0000]', 'bg-[#E70013]', 'bg-[#D8000F]',
+  'bg-[#BB2533]', 'bg-[#174A3F]',
+]
+
   // const clusterLayer: LayerProps = {
   //   id: 'clusters',
   //   type: 'circle',

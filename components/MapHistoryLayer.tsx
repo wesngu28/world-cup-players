@@ -48,3 +48,22 @@ export const appearances: LayerProps = {
     'fill-opacity': 0.8,
   }
 };
+
+export const highestLegend = [
+  ['Group Stage', 'bg-[#a6bddb]'],
+  ['Round of 16', 'bg-[#74a9cf]'],
+  ['Quarterfinals', 'bg-[#2b8cbe]'],
+  ['Third', 'bg-[#045a8d]'],
+  ['Second', 'bg-[#034e7b]'],
+  ['Champion', 'bg-[#FFD700]'],
+  ['TBD', 'bg-[#cd3280]']
+]
+
+export const appearancesLegend = [
+  [0, 'bg-[#d0d1e6]'],
+  [1, 'bg-[#a6bddb]'],
+  [3, 'bg-[#74a9cf]'],
+  [7, 'bg-[#2b8cbe]'],
+  [11, 'bg-[#045a8d]'],
+  [16, 'bg-[#034e7b]']
+]
