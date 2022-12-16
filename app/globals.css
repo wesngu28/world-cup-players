@@ -12,7 +12,7 @@
 
 .mapboxgl-control-container {
   position: relative;
-  bottom: 4rem;
+  bottom: 3rem;
   margin-right: 1rem;
   float: right;
 }

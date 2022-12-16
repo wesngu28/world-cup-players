@@ -1,13 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Map, { Layer, Source, Popup, LayerProps } from "react-map-gl";
+import Map, { Layer, Source } from "react-map-gl";
+import { choroStyle } from "./MapCountryLayer";
+import { appearances, highest } from "./MapHistoryLayer";
+import { pointStyle } from "./MapPlayer";
 
 export default function Maps() {
 
   const [data, setData] = useState({} as {type: string, features: any})
   const [info, setInfo] = useState(<h2></h2>)
   const [active, setActive] = useState('')
+  const [filter, setFilter] = useState([] as string[])
+  const [filterable, setFilterables] = useState([] as string[])
 
   useEffect(() => {
     async function getData() {
@@ -16,6 +21,9 @@ export default function Maps() {
       setInfo(<h2></h2>)
       setData(playerData)
       setActive('PLAYERS')
+      let countries = playerData.features.map((player: any) => player.properties.National_Team)
+      countries = new Set(countries)
+      setFilterables((Array.from(countries).sort() as string []))
     }
     getData()
   }, [])
@@ -35,10 +43,16 @@ export default function Maps() {
     setActive('COUNTRIES')
   }
 
+  async function setHistory(type: string) {
+    const players = await fetch('https://raw.githubusercontent.com/wesngu28/world-cup-players/main/data/WCStats.geojson')
+    const playerData = await players.json()
+    setData(playerData)
+    setActive(type)
+  }
+
   const handleClick = (layer) => {
     const features = layer.features;
-    console.log(features)
-    if (features[0].layer.id === "PLAYERS") {
+    if (active === "PLAYERS") {
       let names: string[] = []
       features.map((player: any) => {
         if(!names.includes(`${player.properties.PLAYER_NAME}, ${player.properties.POS} for ${player.properties.National_Team}`)) {
@@ -51,7 +65,8 @@ export default function Maps() {
           {names.map((name) => <p key={name}>{name}</p>)}
         </div>
       )
-    } else {
+    }
+    if (active === "COUNTRIES") {
       setInfo(
         <div className={"flex flex-col items-center justify-center p-4 absolute top-0 m-4 bg-gray-300"}>
           <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.COUNTRY}</h2>
@@ -59,154 +74,41 @@ export default function Maps() {
         </div>
       )
     }
-  };
-
-  const pointStyle: LayerProps = {
-    id: 'PLAYERS',
-    type: 'circle',
-    source: 'wc',
-    filter: ['!', ['has', 'point_count']],
-    paint: {
-      'circle-radius': 5,
-      'circle-color': [
-        'match',
-        ['get', 'National_Team'],
-        'Argentina', '#43A1D5',
-        'Australia', '#00843D',
-        'Belgium', '#FFD500',
-        'Brazil', '#19AE47',
-        'Cameroon', '#FBD81B',
-        'Canada', '#C5281C',
-        'Costa Rica', '#EBC17D',
-        'Croatia', '#0457A2',
-        'Denmark', '#CD181E',
-        'Ecuador', '#FFCE00',
-        'England', '#FFFFFF',
-        'France', '#21304D',
-        'Germany', '#000000',
-        'Ghana', '#009535',
-        'Iran', '#239F40',
-        'Japan', '#4EB2EB',
-        'Mexico', '#334D45',
-        'Morocco', '#D29D63',
-        'Netherlands', '#F36C21',
-        'Poland', '#DC143C',
-        'Portugal', '#0D6938',
-        'Qatar', '#7F1431',
-        'Saudi Arabia', '#7EC8AE',
-        'Senegal', '#11A335',
-        'Serbia', '#0D1131',
-        'South Korea', '#EC0F32',
-        'Spain', '#FCB507',
-        'Switzerland', '#FF0000',
-        'Tunisia', '#E70013',
-        'Uruguay', '#D8000F',
-        'USA', '#BB2533',
-        'Wales', '#174A3F',
-        /* other */ '#ccc'
-      ]
+    if (active === "APPEAR") {
+      if (features[0].properties.WC_APPEARA !== 0) {
+        setInfo(
+          <div className={"flex flex-col items-center justify-center p-4 absolute top-0 m-4 bg-gray-300"}>
+            <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.COUNTRY}</h2>
+            <p>{features[0].properties.COUNTRY} has appeared in {features[0].properties.WC_APPEARA} times.</p>
+          </div>
+        )
+      }
+    }
+    if (active === "HIGHEST") {
+      let highest = '';
+      if (features[0].properties.WC_HIGHEST !== '') {
+        if (features[0].properties.WC_HIGHEST === 'GS') {
+          highest = 'the group stage'
+        } else if (features[0].properties.WC_HIGHEST === 'RO16') {
+          highest = 'the round of 16'
+        } else if (features[0].properties.WC_HIGHEST === 'TBD') {
+          highest = 'to be determined'
+        } else if (features[0].properties.WC_HIGHEST === 'QF') {
+          highest = 'the quarterfinals'
+        } else if (features[0].properties.WC_HIGHEST === 'CHAMP') {
+          highest = 'winning the World Cup'
+        } else {
+          highest = `placing ${features[0].properties.WC_HIGHEST.toLowerCase()}`
+        }
+        setInfo(
+          <div className={"flex flex-col items-center justify-center p-4 absolute top-0 m-4 bg-gray-300"}>
+            <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.COUNTRY}</h2>
+            <p>{features[0].properties.COUNTRY}&apos;s best performance is {highest}.</p>
+          </div>
+        )
+      }
     }
   };
-
-  // const clusterLayer: LayerProps = {
-  //   id: 'clusters',
-  //   type: 'circle',
-  //   source: 'wc',
-  //   filter: ['has', 'point_count'],
-  //   paint: {
-  //     'circle-color': ['step', ['get', 'point_count'], '#51bbd6', 3, '#f1f075', 7, '#f28cb1'],
-  //     'circle-radius': ['step', ['get', 'point_count'], 20, 100, 30, 750, 40]
-  //   }
-  // };
-
-  // const clusterCountLayer: LayerProps = {
-  //   id: 'cluster-count',
-  //   type: 'symbol',
-  //   source: 'wc',
-  //   filter: ['has', 'point_count'],
-  //   layout: {
-  //     'text-field': '{point_count_abbreviated}',
-  //     'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-  //     'text-size': 12
-  //   }
-  // };
-
-  // const choroStyle: LayerProps = {
-  //   id: "COUNTRIES",
-  //   type: "fill",
-  //   source: 'wc',
-  //   paint: {
-  //     'fill-color': [
-  //         'step',
-  //         ['get', 'FREQUENCY'],
-  //         '#ccc',
-  //         0,
-  //         '#d0d1e6',
-  //         1,
-  //         '#a6bddb',
-  //         5,
-  //         '#74a9cf',
-  //         25,
-  //         '#2b8cbe',
-  //         40,
-  //         '#045a8d',
-  //         60,
-  //         '#034e7b'
-
-  //     ],
-  //     'fill-outline-color': '#BBBBBB',
-  //     'fill-opacity': 0.8,
-  //   }
-  // };
-
-  const choroStyle: LayerProps = {
-    id: 'PLAYERS',
-    type: 'fill',
-    source: 'wc',
-    paint: {
-      'fill-color': [
-        'match',
-        ['get', 'WC_HIGHEST'],
-        'NEVER', '#EEEEEE',
-        'GS', '#F9B5D0',
-        'RO16', '#FF8E9E',
-        'QS', '#FF597B',
-        'THIRD', '#cd7f32 ',
-        'SECOND', '#C0C0C0',
-        'CHAMP', '#FFD700',
-        'TBD', '#cd3280',
-        /* other */ '#ccc'
-      ]
-    }
-  };
-
-  // const choroStyle: LayerProps = {
-  //   id: "COUNTRIES",
-  //   type: "fill",
-  //   source: 'wc',
-  //   paint: {
-  //     'fill-color': [
-  //         'step',
-  //         ['get', 'WC_APPEARA'],
-  //         '#ccc',
-  //         0,
-  //         '#d0d1e6',
-  //         1,
-  //         '#a6bddb',
-  //         3,
-  //         '#74a9cf',
-  //         7,
-  //         '#2b8cbe',
-  //         11,
-  //         '#045a8d',
-  //         16,
-  //         '#034e7b'
-
-  //     ],
-  //     'fill-outline-color': '#BBBBBB',
-  //     'fill-opacity': 0.8,
-  //   }
-  // };
 
   return (
     <div className="h-[calc(100vh-7rem)] w-full relative">
@@ -220,25 +122,30 @@ export default function Maps() {
         onClick={handleClick}
       >
         {info}
-        <div className={"absolute bottom-0 m-4 bg-gray-300"}>
-          <button onClick={setPlayers}>Players</button>
-          <button onClick={setNations}>Nations</button>
+        {active === 'PLAYERS' ?         <div className={"absolute bottom-4 w-64 right-56 m-4 bg-gray-300 grid grid-cols-2 place-items-start p-4"}>
+            {filterable.map(country => <button key={country} onClick={() => setFilter(['in', 'National_Team', country])}>{country}</button>)}
+            <button onClick={() => setFilter(['in', 'National_Team', ''])}>All</button>
+        </div> : null}
+        <div className={"absolute bottom-4 right-0 w-min m-4 bg-gray-300 flex flex-col p-4"}>
+          <button className={`border-b-2 border-gray-300 p-4 ${active === 'PLAYERS' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={setPlayers}>Players</button>
+          <button className={`border-b-2 border-gray-300 p-4 ${active === 'COUNTRIES' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={setNations}>Frequency</button>
+          <button className={`border-b-2 border-gray-300 p-4 ${active === 'APPEAR' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={() => setHistory('APPEAR')}>WC Appearances</button>
+          <button className={`border-b-2 border-gray-300 p-4 ${active === 'HIGHEST' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={() => setHistory('HIGHEST')}>Highest Finish</button>
         </div>
-        <Source
-          id="wc" type="geojson" data={data}
-          // cluster={true}
-          // clusterMaxZoom={7}
-          // clusterRadius={50}
-          >
-          {data.type ? data.features.length === 831 ?
+        <Source id="wc" type="geojson" data={data}>
+          {active === 'PLAYERS' ?
             <>
-            {/* <Layer {...clusterLayer} />
-            <Layer {...clusterCountLayer} /> */}
-            <Layer {...pointStyle} />
-            </> : null : null
+              {filter.length > 2 ? <Layer {...pointStyle} filter={filter} /> : <Layer {...pointStyle} />}
+            </> : null
           }
-          {data.type ? data.features.length === 242 ?
-            <Layer {...choroStyle} /> : null : null
+          {active === 'COUNTRIES' ?
+            <Layer {...choroStyle} /> : null
+          }
+          {active === 'APPEAR' ?
+            <Layer {...appearances} /> : null
+          }
+          {active === 'HIGHEST' ?
+            <Layer {...highest} /> : null
           }
         </Source>
       </Map>
