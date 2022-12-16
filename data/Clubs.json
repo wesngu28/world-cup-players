@@ -1,0 +1,1190 @@
+[
+  {
+    "CLUB": "FC Bayern München (GER)",
+    "COUNT": 17
+  },
+  {
+    "CLUB": "FC Barcelona (ESP)",
+    "COUNT": 16
+  },
+  {
+    "CLUB": "Manchester City FC (ENG)",
+    "COUNT": 16
+  },
+  {
+    "CLUB": "Al Sadd SC (QAT)",
+    "COUNT": 15
+  },
+  {
+    "CLUB": "Manchester United FC (ENG)",
+    "COUNT": 14
+  },
+  {
+    "CLUB": "Real Madrid CF (ESP)",
+    "COUNT": 13
+  },
+  {
+    "CLUB": "Al Hilal SFC (KSA)",
+    "COUNT": 12
+  },
+  {
+    "CLUB": "Chelsea FC (ENG)",
+    "COUNT": 12
+  },
+  {
+    "CLUB": "AFC Ajax (NED)",
+    "COUNT": 11
+  },
+  {
+    "CLUB": "Tottenham Hotspur FC (ENG)",
+    "COUNT": 11
+  },
+  {
+    "CLUB": "Juventus FC (ITA)",
+    "COUNT": 11
+  },
+  {
+    "CLUB": "CA Atlético Madrid (ESP)",
+    "COUNT": 11
+  },
+  {
+    "CLUB": "Borussia Dortmund (GER)",
+    "COUNT": 11
+  },
+  {
+    "CLUB": "Paris Saint-Germain FC (FRA)",
+    "COUNT": 11
+  },
+  {
+    "CLUB": "Arsenal FC (ENG)",
+    "COUNT": 10
+  },
+  {
+    "CLUB": "Sevilla FC (ESP)",
+    "COUNT": 10
+  },
+  {
+    "CLUB": "Stade Rennais FC (FRA)",
+    "COUNT": 8
+  },
+  {
+    "CLUB": "Club Brugge (BEL)",
+    "COUNT": 8
+  },
+  {
+    "CLUB": "Brighton & Hove Albion FC (ENG)",
+    "COUNT": 8
+  },
+  {
+    "CLUB": "Leicester City FC (ENG)",
+    "COUNT": 7
+  },
+  {
+    "CLUB": "Eintracht Frankfurt (GER)",
+    "COUNT": 7
+  },
+  {
+    "CLUB": "Liverpool FC (ENG)",
+    "COUNT": 7
+  },
+  {
+    "CLUB": "AC Milan (ITA)",
+    "COUNT": 7
+  },
+  {
+    "CLUB": "Al Nassr FC (KSA)",
+    "COUNT": 7
+  },
+  {
+    "CLUB": "Al Duhail SC (QAT)",
+    "COUNT": 7
+  },
+  {
+    "CLUB": "RB Leipzig (GER)",
+    "COUNT": 7
+  },
+  {
+    "CLUB": "FC Internazionale (ITA)",
+    "COUNT": 7
+  },
+  {
+    "CLUB": "FC Porto (POR)",
+    "COUNT": 6
+  },
+  {
+    "CLUB": "Brentford FC (ENG)",
+    "COUNT": 6
+  },
+  {
+    "CLUB": "CS Herediano (CRC)",
+    "COUNT": 6
+  },
+  {
+    "CLUB": "AS Monaco (FRA)",
+    "COUNT": 6
+  },
+  {
+    "CLUB": "CF Montréal (CAN)",
+    "COUNT": 6
+  },
+  {
+    "CLUB": "Olympique Marseille (FRA)",
+    "COUNT": 6
+  },
+  {
+    "CLUB": "Fulham FC (ENG)",
+    "COUNT": 6
+  },
+  {
+    "CLUB": "Jeonbuk Hyundai FC (KOR)",
+    "COUNT": 6
+  },
+  {
+    "CLUB": "VfL Borussia Mönchengladbach (GER)",
+    "COUNT": 6
+  },
+  {
+    "CLUB": "GNK Dinamo Zagreb (CRO)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Los Angeles FC (USA)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Wolverhampton Wanderers FC (ENG)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "AEK Athens (GRE)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Torino FC (ITA)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "West Ham United FC (ENG)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Real Betis (ESP)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "SSC Napoli (ITA)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Valencia CF (ESP)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "SC Freiburg (GER)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Newcastle United FC (ENG)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "ACF Fiorentina (ITA)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "SL Benca (POR)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "CF Monterrey (MEX)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Nottingham Forest FC (ENG)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Galatasaray SK (TUR)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Villarreal CF (ESP)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Al Shabab FC (KSA)",
+    "COUNT": 5
+  },
+  {
+    "CLUB": "Sporting CP (POR)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "AS Roma (ITA)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "Bayer 04 Leverkusen (GER)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "Besiktas JK (TUR)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "Hellas Verona FC (ITA)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "Seattle Sounders FC (USA)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "Atalanta Bergamo (ITA)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "PSV Eindhoven (NED)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "Olympiacos Piraeus FC (GRE)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "CR Flamengo (BRA)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "FC Red Bull Salzburg (AUT)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "Aston Villa FC (ENG)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "Celtic FC (SCO)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "Everton FC (ENG)",
+    "COUNT": 4
+  },
+  {
+    "CLUB": "Heart Of Midlothian FC (SCO)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Wydad Casablanca (MAR)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Toronto FC (CAN)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "CF Pachuca (MEX)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Reading FC (ENG)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Perspolis Tehran (IRN)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Ulsan Hyundai FC (KOR)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Cruz Azul (MEX)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "FC Augsburg (GER)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Athletic Club (ESP)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "LD Alajuelense (CRC)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Club León (MEX)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "RC Lens (FRA)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Deportivo Saprissa (CRC)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "KRC Genk (BEL)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Espérance Tunis (TUN)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "FK Crvena Zvezda (SRB)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Al Gharafa SC (QAT)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Nacional Montevideo (URU)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Club América (MEX)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "US Salernitana (ITA)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "VfL Wolfsburg (GER)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "VfB Stuttgart (GER)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Leeds United FC (ENG)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Swansea City AFC (WAL)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Royal Antwerp FC (BEL)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "UC Sampdoria (ITA)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "FSV Mainz 05 (GER)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "BSC Young Boys (SUI)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Central Coast Mariners FC (AUS)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Feyenoord Rotterdam (NED)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "FC København (DEN)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Esteghlal Tehran FC (IRN)",
+    "COUNT": 3
+  },
+  {
+    "CLUB": "Brøndby IF (DEN)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "OGC Nice (FRA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Southampton FC (ENG)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "SV Werder Bremen (GER)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Al Rayyan SC (QAT)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Sheeld United FC (ENG)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Birmingham City FC (ENG)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "RC Strasbourg (FRA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Al Arabi SC (QAT)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Al Ahli SC (KSA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Montpellier HSC (FRA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Al Wehda FC (KSA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "SC Braga (POR)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Club Africain (TUN)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Spezia Calcio (ITA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Legia Warsaw (POL)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Bournemouth AFC (ENG)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "ES Troyes (FRA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Abha Club (KSA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Club Santos Laguna (MEX)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "FC Luzern (SUI)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Real Valladolid CF (ESP)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Crystal Palace FC (ENG)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Kayserispor (TUR)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Luton Town FC (ENG)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "CD Guadalajara (MEX)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Lille OSC (FRA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "CA Osasuna (ESP)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Kawasaki Frontale (JPN)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Queens Park Rangers FC (ENG)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Fenerbahce SK (TUR)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "RSC Anderlecht (BEL)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Odense BK (DEN)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Al Ittihad FC (KSA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Dundee United FC (SCO)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Sunderland AFC (ENG)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Melbourne City FC (AUS)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Cardiff City FC (WAL)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "CA River Plate (ARG)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Olympique Lyon (FRA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Nashville Soccer Club (USA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Angers SCO (FRA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Bologna FC (ITA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "SS Lazio (ITA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Trabzonspor (TUR)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "TSG 1899 Hoffenheim (GER)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "RCD Mallorca (ESP)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Getafe CF (ESP)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "RC Celta Vigo (ESP)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "FC Seoul (KOR)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Sepahan FC (IRN)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Clermont Foot (FRA)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Al Ahli SC (QAT)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Al Kuwait SC (KUW)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "FC Basel (SUI)",
+    "COUNT": 2
+  },
+  {
+    "CLUB": "Lech Poznan (POL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Stade Brest (FRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Cádiz CF (ESP)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Albirex Niigata (JPN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Qatar SC (QAT)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "CD Leganés (ESP)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Cercle Brugge (BEL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC Juárez (MEX)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Benevento Calcio (ITA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Toulouse FC (FRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "US Cremonese (ITA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Houston Dynamo (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "SC Heerenveen (NED)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Daejeon Citizen FC (KOR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Charlotte FC (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Pogon Szczecin (POL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Al Ahly SC (EGY)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "CS Sfaxien (TUN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "SM Caen (FRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Étoile Du Sahel (TUN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Zamalek SC (EGY)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "New York City FC (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Antalyaspor AS (TUR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "New York Red Bulls (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Norwich City FC (ENG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Sint-Truiden VV (BEL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Inter Miami FC (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "CA Independiente (ARG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Orlando City SC (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "LA Galaxy (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Athletico Paranaense (BRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "CA Velez Sarseld (ARG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "AFC Wimbledon (ENG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "US Monastir (TUN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC Lugano (SUI)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Gimcheon Sangmu FC (KOR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Rayo Vallecano (ESP)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Al Wakrah SC (QAT)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Al Fateh SC (KSA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "St Johnstone FC (SCO)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Hibernian FC (SCO)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Stoke City FC (ENG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Amiens SC (FRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Pafos FC (CYP)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Watford FC (ENG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Gamba Osaka (JPN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Alanyaspor (TUR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Chicago Fire (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "PAOK Saloniki (GRE)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "St Mirren FC (SCO)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Nagoya Grampus (JPN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Shandong Luneng Taishan FC (CHN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Daegu FC (KOR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Urawa Reds (JPN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Swindon Town FC (ENG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Shimizu S-Pulse (JPN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Puntarenas FC (CRC)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Vancouver Whitecaps FC (CAN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Minnesota United FC (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Panetolikos FC (GRE)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC Dallas (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Colorado Rapids (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Real Salt Lake (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Konyaspor (TUR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "AD San Carlos (CRC)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "CD Lugo (ESP)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "GD Chaves (POR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "AD Municipal Grecia (CRC)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC Cincinnatti (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Millonarios FC (COL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "AD Guanacasteca (CRC)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "HNK Hajduk Split (CRO)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Columbus Crew SC (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "US Sassuolo (ITA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "NK Osijek (CRO)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "KMSR Deinze (BEL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Coton Sport FC (CMR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Fortuna Düsseldorf (GER)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "UD Almería (ESP)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "SD Aucas (ECU)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC St. Pauli (GER)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Adelaide United FC (AUS)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Middlesbrough FC (ENG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Fagiano Okayama (JPN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Sydney FC (AUS)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Standard Liège (BEL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC Zenit St. Petersburg (RUS)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "SE Palmeiras (BRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Al Tai FC (KSA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Pumas UNAM (MEX)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Colombe Sportive (CMR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Aris Thessaloniki FC (GRE)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Hannover 96 (GER)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC Dynamo Moscow (RUS)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "KV Mechelen (BEL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Shanghai Shenhua FC (CHN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Philadelphia Union (USA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Rangers FC (SCO)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Brescia Calcio (ITA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "SL Benfica (POR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Vejle BK (DEN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Asante Kotoko SC (GHA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "AJ Auxerre (FRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "KAS Eupen (BEL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Hearts Of Oak SC (GHA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC St. Gallen (SUI)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Persepolis FC (IRN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "SD Ponferradina (ESP)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Shabab Al Ahli Club (UAE)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "AC Omonia (CYP)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Hertha BSC (GER)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Sporting Charleroi (BEL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "SSC Bari (ITA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC Schalke 04 (GER)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC Tokyo (JPN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Shonan Bellmare (JPN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "VfL Bochum (GER)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Stade Reims (FRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Real Sociedad (ESP)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Udinese (ITA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Ferencvárosi TC (HUN)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "KAA Gent (BEL)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC Lorient (FRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "RCD Espanyol (ESP)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "1. FC Union Berlin (GER)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Independiente Del Valle (ECU)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "CA Talleres (ARG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "CA Newells Old Boys (ARG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Imbabura SC (ECU)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Sao Paulo FC (BRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "LDU Quito (ECU)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Bristol City FC (ENG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Hatayspor (TUR)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Hudderseld Town FC (ENG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Portsmouth FC (ENG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "MK Dons FC (ENG)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Al Ettifaq FC (KSA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "1. FC Köln (GER)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Atromitos FC (GRE)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "FC Nantes (FRA)",
+    "COUNT": 1
+  },
+  {
+    "CLUB": "Burnley FC (ENG)",
+    "COUNT": 1
+  }
+]

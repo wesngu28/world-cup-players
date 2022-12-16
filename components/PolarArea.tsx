@@ -1,17 +1,12 @@
-"use client";
 import { useEffect, useState } from "react";
-import { Bar } from "react-chartjs-2";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, Title } from 'chart.js';
+import { PolarArea } from "react-chartjs-2";
 
 interface Props {
   x: string,
-  xText: string,
-  title: string,
-  xHover: string
 }
+export function ClubPolar() {
 
-function Bars({x, xText, title, xHover}: Props) {
-  const [data, setData] = useState([{} as any]);
+  const [data, setData] = useState([{} as any])
 
   useEffect(() => {
     async function getData() {
@@ -26,7 +21,7 @@ function Bars({x, xText, title, xHover}: Props) {
 
   return (
     <div className={'mb-8 w-1/2 h-[1000px] relative'}>
-      <Bar
+      <PolarArea
         data={{
           labels: data.filter(data => data[x] != '').map((data) => data.COUNTRY),
           datasets: [
@@ -34,16 +29,14 @@ function Bars({x, xText, title, xHover}: Props) {
               label: xHover,
               data: data.filter(data => data[x] != '').map((data) => data[x]),
               backgroundColor: [
-                "rgba(75,192,192,1)",
-                "#ecf0f1",
-                "#50AF95",
-                "#f3ba2f",
-                "#2a71d0",
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(54, 162, 235, 0.5)',
+                'rgba(255, 206, 86, 0.5)',
+                'rgba(75, 192, 192, 0.5)',
+                'rgba(153, 102, 255, 0.5)',
+                'rgba(255, 159, 64, 0.5)',
               ],
-              borderColor: "black",
               borderWidth: 1,
-              barPercentage: 0.75,
-              categoryPercentage: 1,
             },
           ],
         }}
@@ -72,9 +65,4 @@ function Bars({x, xText, title, xHover}: Props) {
       />
     </div>
   );
-}
-
-export default function LicensedBar({x, xText, title, xHover}: Props) {
-  ChartJS.register(ArcElement, Tooltip, Legend, Title, CategoryScale, LinearScale, BarElement);
-  return <Bars x={x} xText={xText} title={title} xHover={xHover} />
 }

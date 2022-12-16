@@ -1,6 +1,5 @@
 import { readFileSync } from "fs"
-import Bar from "../../components/Bar"
-import { addendum } from "../../data/coin"
+import LicensedBar from "../../components/Bar"
 
 export default function About() {
   return(
@@ -44,7 +43,10 @@ export default function About() {
       Regardless, the act of being called up to represent a country is one of the greatest honors for a footballer,
       and the decision for those eligible for multiple teams cannot be easy.
       </p>
-      <Bar />
+      <LicensedBar x={'BORN_IN_VS_NAT'} xText="Ratio of Players Born in Country to Size of their Team"
+      title="Ratio of Players Born in Country to Size of their Team" xHover="Players Born in Country to Team Size"/>
+      <LicensedBar x={'PFB_NAT_PCTG'} xText="Percentage of National Team that was born in the Country"
+      title="Percentage of National Team that was born in the Country" xHover="Percentage of National Team that was born in the Country"/>
     </div>
   )
 }
