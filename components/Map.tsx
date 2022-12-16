@@ -131,54 +131,54 @@ export default function Maps() {
   //   }
   // };
 
-  const choroStyle: LayerProps = {
-    id: "COUNTRIES",
-    type: "fill",
-    source: 'wc',
-    paint: {
-      'fill-color': [
-          'step',
-          ['get', 'FREQUENCY'],
-          '#ccc',
-          0,
-          '#d0d1e6',
-          1,
-          '#a6bddb',
-          5,
-          '#74a9cf',
-          25,
-          '#2b8cbe',
-          40,
-          '#045a8d',
-          60,
-          '#034e7b'
-
-      ],
-      'fill-outline-color': '#BBBBBB',
-      'fill-opacity': 0.8,
-    }
-  };
-
   // const choroStyle: LayerProps = {
-  //   id: 'PLAYERS',
-  //   type: 'fill',
+  //   id: "COUNTRIES",
+  //   type: "fill",
   //   source: 'wc',
   //   paint: {
   //     'fill-color': [
-  //       'match',
-  //       ['get', 'WC_HIGHEST'],
-  //       'NEVER', '#EEEEEE',
-  //       'GS', '#F9B5D0',
-  //       'RO16', '#FF8E9E',
-  //       'QS', '#FF597B',
-  //       'THIRD', '#cd7f32 ',
-  //       'SECOND', '#C0C0C0',
-  //       'CHAMP', '#FFD700',
-  //       'TBD', '#cd3280',
-  //       /* other */ '#ccc'
-  //     ]
+  //         'step',
+  //         ['get', 'FREQUENCY'],
+  //         '#ccc',
+  //         0,
+  //         '#d0d1e6',
+  //         1,
+  //         '#a6bddb',
+  //         5,
+  //         '#74a9cf',
+  //         25,
+  //         '#2b8cbe',
+  //         40,
+  //         '#045a8d',
+  //         60,
+  //         '#034e7b'
+
+  //     ],
+  //     'fill-outline-color': '#BBBBBB',
+  //     'fill-opacity': 0.8,
   //   }
   // };
+
+  const choroStyle: LayerProps = {
+    id: 'PLAYERS',
+    type: 'fill',
+    source: 'wc',
+    paint: {
+      'fill-color': [
+        'match',
+        ['get', 'WC_HIGHEST'],
+        'NEVER', '#EEEEEE',
+        'GS', '#F9B5D0',
+        'RO16', '#FF8E9E',
+        'QS', '#FF597B',
+        'THIRD', '#cd7f32 ',
+        'SECOND', '#C0C0C0',
+        'CHAMP', '#FFD700',
+        'TBD', '#cd3280',
+        /* other */ '#ccc'
+      ]
+    }
+  };
 
   // const choroStyle: LayerProps = {
   //   id: "COUNTRIES",
