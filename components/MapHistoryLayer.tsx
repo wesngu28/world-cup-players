@@ -43,9 +43,7 @@ export const appearances: LayerProps = {
         16,
         '#034e7b'
 
-    ],
-    'fill-outline-color': '#BBBBBB',
-    'fill-opacity': 0.8,
+    ]
   }
 };
 
