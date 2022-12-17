@@ -1,15 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Map, { Layer, Source } from "react-map-gl";
+import Map, { Layer, LayerProps, MapLayerMouseEvent, Source } from "react-map-gl";
 import { choroStyle, frequencyLegend } from "./MapCountryLayer";
 import { appearances, appearancesLegend, highest, highestLegend } from "./MapHistoryLayer";
-import { pointStyle, colors } from "./MapPlayer";
+import { colors, PointLayer } from "./MapPlayer";
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 export default function Maps() {
 
-  const [data, setData] = useState({} as {type: string, features: any})
+  const [data, setData] = useState({} as string)
   const [info, setInfo] = useState(<h2></h2>)
   const [active, setActive] = useState('')
   const [filter, setFilter] = useState([] as string[])
@@ -51,62 +51,64 @@ export default function Maps() {
     setActive(type)
   }
 
-  const handleClick = (layer) => {
-    const features = layer.features;
-    if (active === "PLAYERS") {
-      let names: string[] = []
-      features.map((player: any) => {
-        if(!names.includes(`${player.properties.PLAYER_NAME}, ${player.properties.POS} for ${player.properties.National_Team}`)) {
-          names.push(`${player.properties.PLAYER_NAME}, ${player.properties.POS} for ${player.properties.National_Team}`)
-        }
-      })
-      setInfo(
-        <div className={"flex flex-col items-center justify-center p-4 absolute top-0 m-4 bg-gray-300"}>
-          <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.Birth}</h2>
-          {names.map((name) => <p key={name}>{name}</p>)}
-        </div>
-      )
-    }
-    if (active === "COUNTRIES") {
-      setInfo(
-        <div className={"flex flex-col items-center justify-center p-4 absolute top-0 m-4 bg-gray-300"}>
-          <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.COUNTRY}</h2>
-          <p>{features[0].properties.FREQUENCY} players in the World Cup were born in {features[0].properties.COUNTRY}.</p>
-        </div>
-      )
-    }
-    if (active === "APPEAR") {
-      if (features[0].properties.WC_APPEARA !== 0) {
+  const handleClick = (layer: MapLayerMouseEvent) => {
+    const features = layer.features!;
+    if(features[0] && features[0].properties) {
+      if (active === "PLAYERS") {
+        let names: string[] = []
+        features.map((player: any) => {
+          if(!names.includes(`${player.properties.PLAYER_NAME}, ${player.properties.POS} for ${player.properties.National_Team}`)) {
+            names.push(`${player.properties.PLAYER_NAME}, ${player.properties.POS} for ${player.properties.National_Team}`)
+          }
+        })
         setInfo(
           <div className={"flex flex-col items-center justify-center p-4 absolute top-0 m-4 bg-gray-300"}>
-            <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.COUNTRY}</h2>
-            <p>{features[0].properties.COUNTRY} has appeared in {features[0].properties.WC_APPEARA} times.</p>
+            <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.Birth}</h2>
+            {names.map((name) => <p key={name}>{name}</p>)}
           </div>
         )
       }
-    }
-    if (active === "HIGHEST") {
-      let highest = '';
-      if (features[0].properties.WC_HIGHEST !== '') {
-        if (features[0].properties.WC_HIGHEST === 'GS') {
-          highest = 'the group stage'
-        } else if (features[0].properties.WC_HIGHEST === 'RO16') {
-          highest = 'the round of 16'
-        } else if (features[0].properties.WC_HIGHEST === 'TBD') {
-          highest = 'to be determined'
-        } else if (features[0].properties.WC_HIGHEST === 'QF') {
-          highest = 'the quarterfinals'
-        } else if (features[0].properties.WC_HIGHEST === 'CHAMP') {
-          highest = 'winning the World Cup'
-        } else {
-          highest = `placing ${features[0].properties.WC_HIGHEST.toLowerCase()}`
-        }
+      if (active === "COUNTRIES") {
         setInfo(
           <div className={"flex flex-col items-center justify-center p-4 absolute top-0 m-4 bg-gray-300"}>
             <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.COUNTRY}</h2>
-            <p>{features[0].properties.COUNTRY}&apos;s best performance is {highest}.</p>
+            <p>{features[0].properties.FREQUENCY} players in the World Cup were born in {features[0].properties.COUNTRY}.</p>
           </div>
         )
+      }
+      if (active === "APPEAR") {
+        if (features[0].properties.WC_APPEARA !== 0) {
+          setInfo(
+            <div className={"flex flex-col items-center justify-center p-4 absolute top-0 m-4 bg-gray-300"}>
+              <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.COUNTRY}</h2>
+              <p>{features[0].properties.COUNTRY} has appeared in {features[0].properties.WC_APPEARA} times.</p>
+            </div>
+          )
+        }
+      }
+      if (active === "HIGHEST") {
+        let highest = '';
+        if (features[0].properties.WC_HIGHEST !== '') {
+          if (features[0].properties.WC_HIGHEST === 'GS') {
+            highest = 'the group stage'
+          } else if (features[0].properties.WC_HIGHEST === 'RO16') {
+            highest = 'the round of 16'
+          } else if (features[0].properties.WC_HIGHEST === 'TBD') {
+            highest = 'to be determined'
+          } else if (features[0].properties.WC_HIGHEST === 'QF') {
+            highest = 'the quarterfinals'
+          } else if (features[0].properties.WC_HIGHEST === 'CHAMP') {
+            highest = 'winning the World Cup'
+          } else {
+            highest = `placing ${features[0].properties.WC_HIGHEST.toLowerCase()}`
+          }
+          setInfo(
+            <div className={"flex flex-col items-center justify-center p-4 absolute top-0 m-4 bg-gray-300"}>
+              <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.COUNTRY}</h2>
+              <p>{features[0].properties.COUNTRY}&apos;s best performance is {highest}.</p>
+            </div>
+          )
+        }
       }
     }
   };
@@ -143,7 +145,7 @@ export default function Maps() {
         <Source id="wc" type="geojson" data={data}>
           {active === 'PLAYERS' ?
             <>
-              {filter.length > 2 ? <Layer {...pointStyle} filter={filter} /> : <Layer {...pointStyle} />}
+              {filter.length > 2 ? <PointLayer filter={filter} /> : <PointLayer />}
             </> : null
           }
           {active === 'COUNTRIES' ?

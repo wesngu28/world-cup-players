@@ -1,51 +1,4 @@
-import { LayerProps } from "react-map-gl";
-
-export const pointStyle: LayerProps = {
-  id: 'PLAYERS',
-  type: 'circle',
-  source: 'wc',
-  filter: ['!', ['has', 'point_count']],
-  paint: {
-    'circle-radius': 4,
-    'circle-color': [
-      'match',
-      ['get', 'National_Team'],
-      'Argentina', '#43A1D5',
-      'Australia', '#00843D',
-      'Belgium', '#FFD500',
-      'Brazil', '#19AE47',
-      'Cameroon', '#FBD81B',
-      'Canada', '#C5281C',
-      'Costa Rica', '#EBC17D',
-      'Croatia', '#0457A2',
-      'Denmark', '#CD181E',
-      'Ecuador', '#FFCE00',
-      'England', '#FFFFFF',
-      'France', '#21304D',
-      'Germany', '#000000',
-      'Ghana', '#009535',
-      'Iran', '#239F40',
-      'Japan', '#4EB2EB',
-      'Mexico', '#334D45',
-      'Morocco', '#D29D63',
-      'Netherlands', '#F36C21',
-      'Poland', '#DC143C',
-      'Portugal', '#0D6938',
-      'Qatar', '#7F1431',
-      'Saudi Arabia', '#7EC8AE',
-      'Senegal', '#11A335',
-      'Serbia', '#0D1131',
-      'South Korea', '#EC0F32',
-      'Spain', '#FCB507',
-      'Switzerland', '#FF0000',
-      'Tunisia', '#E70013',
-      'Uruguay', '#D8000F',
-      'USA', '#BB2533',
-      'Wales', '#174A3F',
-      /* other */ '#ccc'
-    ]
-  }
-};
+import { Layer, LayerProps } from "react-map-gl";
 
 export const colors = [
   'bg-[#43A1D5]', 'bg-[#00843D]', 'bg-[#FFD500]', 'bg-[#19AE47]', 'bg-[#FBD81B]',
@@ -57,6 +10,62 @@ export const colors = [
   'bg-[#BB2533]', 'bg-[#174A3F]',
 ]
 
+interface Props {
+  filter?: string[]
+}
+
+export function PointLayer({filter}: Props) {
+
+  const pointStyle: LayerProps = {
+    id: 'PLAYERS',
+    type: 'circle',
+    source: 'wc',
+    paint: {
+      'circle-radius': 4,
+      'circle-color': [
+        'match',
+        ['get', 'National_Team'],
+        'Argentina', '#43A1D5',
+        'Australia', '#00843D',
+        'Belgium', '#FFD500',
+        'Brazil', '#19AE47',
+        'Cameroon', '#FBD81B',
+        'Canada', '#C5281C',
+        'Costa Rica', '#EBC17D',
+        'Croatia', '#0457A2',
+        'Denmark', '#CD181E',
+        'Ecuador', '#FFCE00',
+        'England', '#FFFFFF',
+        'France', '#21304D',
+        'Germany', '#000000',
+        'Ghana', '#009535',
+        'Iran', '#239F40',
+        'Japan', '#4EB2EB',
+        'Mexico', '#334D45',
+        'Morocco', '#D29D63',
+        'Netherlands', '#F36C21',
+        'Poland', '#DC143C',
+        'Portugal', '#0D6938',
+        'Qatar', '#7F1431',
+        'Saudi Arabia', '#7EC8AE',
+        'Senegal', '#11A335',
+        'Serbia', '#0D1131',
+        'South Korea', '#EC0F32',
+        'Spain', '#FCB507',
+        'Switzerland', '#FF0000',
+        'Tunisia', '#E70013',
+        'Uruguay', '#D8000F',
+        'USA', '#BB2533',
+        'Wales', '#174A3F',
+        /* other */ '#ccc'
+      ]
+    }
+  };
+
+  return(
+    <Layer {...pointStyle} filter={filter}/>
+  )
+}
   // const clusterLayer: LayerProps = {
   //   id: 'clusters',
   //   type: 'circle',
