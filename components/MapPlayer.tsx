@@ -63,7 +63,7 @@ export function PointLayer({filter}: Props) {
   };
 
   return(
-    <Layer {...pointStyle} filter={filter}/>
+    filter ? <Layer {...pointStyle} filter={filter}/> : <Layer {...pointStyle} />
   )
 }
   // const clusterLayer: LayerProps = {
