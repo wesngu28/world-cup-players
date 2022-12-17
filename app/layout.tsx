@@ -12,7 +12,7 @@ export default function RootLayout({
       <body className="bg-gray-200 font-nunito">
         <div className="min-h-screen">
           <Header />
-          <div className="min-h-[calc(100vh-7rem)]">{children}</div>
+          <div className="min-h-[calc(100vh-3.5rem)]">{children}</div>
         </div>
       </body>
     </html>

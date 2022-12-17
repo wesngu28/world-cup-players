@@ -3,16 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-.mapboxgl-ctrl-attrib {
-  font-size: 12px;
-  color: white;
-}
-
-.mapboxgl-control-container {
-  position: relative;
-  bottom: 3rem;
-  margin-right: 1rem;
-  float: right;
-}

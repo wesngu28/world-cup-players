@@ -5,6 +5,7 @@ import Map, { Layer, Source } from "react-map-gl";
 import { choroStyle, frequencyLegend } from "./MapCountryLayer";
 import { appearances, appearancesLegend, highest, highestLegend } from "./MapHistoryLayer";
 import { pointStyle, colors } from "./MapPlayer";
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 export default function Maps() {
 
@@ -111,7 +112,7 @@ export default function Maps() {
   };
 
   return (
-    <div className="h-[calc(100vh-7rem)] w-full relative">
+    <div className="h-[calc(100vh-3.5rem)] w-full relative">
       <Map
         initialViewState={{
           zoom: 2,
@@ -120,6 +121,7 @@ export default function Maps() {
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX}
         interactiveLayerIds={[active]}
         onClick={handleClick}
+        attributionControl={true}
       >
         {info}
         {active === 'PLAYERS' ?
