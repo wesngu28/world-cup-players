@@ -15,7 +15,7 @@ export const highest: LayerProps = {
       'THIRD', '#045a8d ',
       'SECOND', '#034e7b',
       'CHAMP', '#FFD700',
-      'TBD', '#045a8d',
+      'TBD', '#82C3EC',
       /* other */ '#ccc'
     ]
   }
@@ -51,7 +51,7 @@ export const highestLegend = [
   ['Group Stage', 'bg-[#a6bddb]'],
   ['Round of 16', 'bg-[#74a9cf]'],
   ['Quarterfinals', 'bg-[#2b8cbe]'],
-  ['Fourth', 'bg-[#cd3280]'],
+  ['Fourth', 'bg-[#82C3EC]'],
   ['Third', 'bg-[#045a8d]'],
   ['Second', 'bg-[#034e7b]'],
   ['Champion', 'bg-[#FFD700]'],
