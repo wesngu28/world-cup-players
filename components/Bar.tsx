@@ -25,7 +25,7 @@ function Bars({x, xText, title, xHover}: Props) {
   }, []);
 
   return (
-    <div className={'mb-8 w-1/2 h-[1000px] relative'}>
+    <div className={'mb-8 w-full p-2 md:p-0 md:w-1/2 h-[1000px] relative'}>
       <Bar
         data={{
           labels: data.filter(data => data[x] != '').map((data) => data.COUNTRY),

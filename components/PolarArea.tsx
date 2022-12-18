@@ -21,7 +21,7 @@ export function ClubPolar() {
   }, []);
 
   return (
-    <div className={"mb-8 w-1/2 h-[600px] relative"}>
+    <div className={"mb-8 w-full p-2 md:p-0 md:w-1/2 h-[600px] relative"}>
       <PolarArea
         data={{
           labels: data.map((data) => data.CLUB).slice(0, 15),
