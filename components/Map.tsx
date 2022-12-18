@@ -81,7 +81,7 @@ export default function Maps() {
           setInfo(
             <div className={"flex flex-col items-center justify-center p-4 absolute top-0 m-4 bg-gray-300"}>
               <h2 className={"mb-4 text-center font-bold"}>{features[0].properties.COUNTRY}</h2>
-              <p>{features[0].properties.COUNTRY} has appeared in {features[0].properties.WC_APPEARA} times.</p>
+              <p>{features[0].properties.COUNTRY} has appeared in the World Cup {features[0].properties.WC_APPEARA} times.</p>
             </div>
           )
         }
