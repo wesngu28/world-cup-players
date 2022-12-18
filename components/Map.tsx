@@ -94,7 +94,7 @@ export default function Maps() {
           } else if (features[0].properties.WC_HIGHEST === 'RO16') {
             highest = 'the round of 16'
           } else if (features[0].properties.WC_HIGHEST === 'TBD') {
-            highest = 'to be determined'
+            highest = 'fourth'
           } else if (features[0].properties.WC_HIGHEST === 'QF') {
             highest = 'the quarterfinals'
           } else if (features[0].properties.WC_HIGHEST === 'CHAMP') {
