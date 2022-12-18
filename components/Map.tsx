@@ -129,7 +129,7 @@ export default function Maps() {
         {active === 'PLAYERS' ?
           <div className={"absolute bottom-8 md:bottom-4 w-[13.5rem] md:w-72 left-0 md:m-6 bg-gray-300 grid grid-cols-2 place-items-start p-4"}>
             {filterable.map((country, i) => <button key={country} onClick={() => setFilter(['in', 'National_Team', country])}><i className={`inline-block w-5 h-5 ${colors[i]}`}></i> {country}</button>)}
-            <button onClick={() => setFilter(['in', 'National_Team', ''])}>All</button>
+            <button className={"mt-2"} onClick={() => setFilter([])}>Show All</button>
           </div> :
           <div className={"absolute bottom-8 md:bottom-4 left-0 w-min m-4 bg-gray-300 flex flex-col p-4"}>
             {active === 'COUNTRIES' ? frequencyLegend.map(freq => <div className={'flex'} key={freq[0]}><i className={`mr-2 inline-block w-5 h-5 ${freq[1]}`}></i>{freq[0]}</div>) : null}
